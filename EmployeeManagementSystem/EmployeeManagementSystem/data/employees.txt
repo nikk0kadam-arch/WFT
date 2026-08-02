@@ -1,0 +1,8 @@
+# type|id|name|age|department|joiningDate|amount1|amount2
+FULLTIME|101|Aditi Sharma|29|Engineering|2019-03-15|75000.00|10.00
+FULLTIME|102|Rohan Mehta|34|Engineering|2016-06-01|95000.00|12.50
+CONTRACT|103|Sara Khan|27|Design|2021-07-01|600.00|160.00
+CONTRACT|104|Vikram Rao|31|Operations|2020-11-20|450.00|150.00
+INTERN|105|Priya Nair|22|Marketing|2024-01-10|15000.00|0.00
+INTERN|106|Karan Verma|21|Engineering|2024-06-01|18000.00|0.00
+FULLTIME|107|Neha Gupta|40|Finance|2014-09-05|110000.00|8.00
