@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: employee-management-api
+
+  # Default profile uses an in-memory H2 database - zero setup required.
+  datasource:
+    url: jdbc:h2:mem:emsdb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 8080
+
+# Actuator: expose only health and info publicly (never expose everything in prod)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+info:
+  app:
+    name: Employee Management API
+    description: Spring Boot REST API for managing employees
+    version: 1.0.0
